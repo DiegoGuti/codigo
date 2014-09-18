@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+</head>
+<body>
+<div id="contenedorYT">Cargando ...</div>
+
+<script type="text/javascript">
+swfobject.embedSWF(
+'http://www.youtube.com/v/e33zCUm1ZnY&enablejsapi=1&rel=0&fs=1',
+'contenedorYT',
+'425','344', '8',null,null,
+{allowScriptAccess: 'always',allowFullScreen: 'true'},
+{id: 'reproductorYT'});
+
+function cargarVideo(id) {
+var o = document.getElementById( 'reproductorYT' );
+if( o ) {o.loadVideoById( id );}
+}
+</script>
+<div class="videominiaturas">
+<a href="javascript:cargarVideo('LDn5GX1m1lU');"><img src="http://img.youtube.com/vi/LDn5GX1m1lU/1.jpg" /></a>
+<a href="javascript:cargarVideo('z6f_ntHe3Yo');"><img src="http://img.youtube.com/vi/z6f_ntHe3Yo/1.jpg" /></a>
+<a href="javascript:cargarVideo('e33zCUm1ZnY');"><img src="http://img.youtube.com/vi/e33zCUm1ZnY/1.jpg" /></a>
+</div>
+</body>
+</html>
